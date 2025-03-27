@@ -6,11 +6,21 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
+    <!-- Version 2.0 - Forced update -->
     <title>xPollutionx's RadioBox</title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/style.css?v=2.0">
+    <script>
+      // Clear cache on load
+      window.onload = function() {
+        if(!window.location.hash) {
+          window.location = window.location + '#loaded';
+          window.location.reload();
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
-    <script src="./assets/index.js"></script>
+    <script src="./assets/index.js?v=2.0"></script>
   </body>
 </html> 
