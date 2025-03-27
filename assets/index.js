@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
   root.innerHTML = `
     <div id="player">
       <div class="title"><a href="https://x.com/xPollutionx" target="_blank">xPollutionx</a>'s RadioBox</div>
-      <div class="player-container"></div>
-      <div class="dock-wrapper">
+      <div class="content-container">
+        <div class="player-container"></div>
         <div class="dock-container"></div>
       </div>
     </div>
