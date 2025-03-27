@@ -11,13 +11,13 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
   `;
 
-  // Album data with YouTube links
+  // Album data with YouTube links from the provided playlist
   const albums = [
-    { title: "Album 1", image: "https://via.placeholder.com/150/771796", youtubeId: "dQw4w9WgXcQ" },
-    { title: "Album 2", image: "https://via.placeholder.com/150/24f355", youtubeId: "dQw4w9WgXcQ" },
-    { title: "Album 3", image: "https://via.placeholder.com/150/d32776", youtubeId: "dQw4w9WgXcQ" },
-    { title: "Album 4", image: "https://via.placeholder.com/150/f66b97", youtubeId: "dQw4w9WgXcQ" },
-    { title: "Album 5", image: "https://via.placeholder.com/150/56a8c2", youtubeId: "dQw4w9WgXcQ" }
+    { title: "Tame Impala - The Less I Know The Better", image: "https://i.ytimg.com/vi/1Bs148Owq-Q/hqdefault.jpg", youtubeId: "1Bs148Owq-Q" },
+    { title: "Artic Monkeys - Do I Wanna Know?", image: "https://i.ytimg.com/vi/bpOSxM0rNPM/hqdefault.jpg", youtubeId: "bpOSxM0rNPM" },
+    { title: "Two Door Cinema Club - What You Know", image: "https://i.ytimg.com/vi/YXwYJyrKK5A/hqdefault.jpg", youtubeId: "YXwYJyrKK5A" },
+    { title: "Glass Animals - Heat Waves", image: "https://i.ytimg.com/vi/mRD0-GxqHVo/hqdefault.jpg", youtubeId: "mRD0-GxqHVo" },
+    { title: "The Neighbourhood - Sweater Weather", image: "https://i.ytimg.com/vi/GCdwKhTtNNw/hqdefault.jpg", youtubeId: "GCdwKhTtNNw" }
   ];
 
   // Get dock container
