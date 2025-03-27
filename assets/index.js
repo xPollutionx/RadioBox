@@ -11,13 +11,25 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
   `;
 
-  // Album data with YouTube links from the provided playlist
+  // Album data with YouTube links from the user's own songs
   const albums = [
-    { title: "Tame Impala - The Less I Know The Better", image: "https://i.ytimg.com/vi/1Bs148Owq-Q/hqdefault.jpg", youtubeId: "1Bs148Owq-Q" },
-    { title: "Artic Monkeys - Do I Wanna Know?", image: "https://i.ytimg.com/vi/bpOSxM0rNPM/hqdefault.jpg", youtubeId: "bpOSxM0rNPM" },
-    { title: "Two Door Cinema Club - What You Know", image: "https://i.ytimg.com/vi/YXwYJyrKK5A/hqdefault.jpg", youtubeId: "YXwYJyrKK5A" },
-    { title: "Glass Animals - Heat Waves", image: "https://i.ytimg.com/vi/mRD0-GxqHVo/hqdefault.jpg", youtubeId: "mRD0-GxqHVo" },
-    { title: "The Neighbourhood - Sweater Weather", image: "https://i.ytimg.com/vi/GCdwKhTtNNw/hqdefault.jpg", youtubeId: "GCdwKhTtNNw" }
+    { title: "Wine", image: "https://i.ytimg.com/vi/1Bs148Owq-Q/hqdefault.jpg", youtubeId: "1Bs148Owq-Q" },
+    { title: "Feelin' Fookin Good", image: "https://i.ytimg.com/vi/dACf70ze-gs/hqdefault.jpg", youtubeId: "dACf70ze-gs" },
+    { title: "Ego Death", image: "https://i.ytimg.com/vi/TSA2IGZbkE0/hqdefault.jpg", youtubeId: "TSA2IGZbkE0" },
+    { title: "Dance with Ghosts", image: "https://i.ytimg.com/vi/53MNK_sy818/hqdefault.jpg", youtubeId: "53MNK_sy818" },
+    { title: "Premixes", image: "https://i.ytimg.com/vi/Gq0hfgnjnB0/hqdefault.jpg", youtubeId: "Gq0hfgnjnB0" },
+    { title: "Love Letters", image: "https://i.ytimg.com/vi/6VodOHtYPNA/hqdefault.jpg", youtubeId: "6VodOHtYPNA" },
+    { title: "HyperPopCorn", image: "https://i.ytimg.com/vi/jjZArTW4PhI/hqdefault.jpg", youtubeId: "jjZArTW4PhI" },
+    { title: "Anthony", image: "https://i.ytimg.com/vi/XnpYYwOU_5c/hqdefault.jpg", youtubeId: "XnpYYwOU_5c" },
+    { title: "Angelo", image: "https://i.ytimg.com/vi/A4u-q4vk8Ew/hqdefault.jpg", youtubeId: "A4u-q4vk8Ew" },
+    { title: "Sample This", image: "https://i.ytimg.com/vi/DDzvFcUgTCc/hqdefault.jpg", youtubeId: "DDzvFcUgTCc" },
+    { title: "Sample This VOL 2", image: "https://i.ytimg.com/vi/wDqw9J_hUIU/hqdefault.jpg", youtubeId: "wDqw9J_hUIU" },
+    { title: "Sliced N Spliced", image: "https://i.ytimg.com/vi/Vmlc_aKQVZM/hqdefault.jpg", youtubeId: "Vmlc_aKQVZM" },
+    { title: "Sliced N Spliced VOL 2", image: "https://i.ytimg.com/vi/MR6u_S6dpSY/hqdefault.jpg", youtubeId: "MR6u_S6dpSY" },
+    { title: "Lil' Big Beatz", image: "https://i.ytimg.com/vi/i8nGHXfdnj0/hqdefault.jpg", youtubeId: "i8nGHXfdnj0" },
+    { title: "Cruisin", image: "https://i.ytimg.com/vi/l5kCtTCHaH8/hqdefault.jpg", youtubeId: "l5kCtTCHaH8" },
+    { title: "Lowekey Lofi", image: "https://i.ytimg.com/vi/QDw9lpf7GX4/hqdefault.jpg", youtubeId: "QDw9lpf7GX4" },
+    { title: "Lowkey Lowfi VOL 2", image: "https://i.ytimg.com/vi/_KPDbBweq7w/hqdefault.jpg", youtubeId: "_KPDbBweq7w" }
   ];
 
   // Get dock container
