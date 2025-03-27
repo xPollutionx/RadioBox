@@ -16,7 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -24,7 +24,7 @@ body {
   font-size: 2rem;
   text-align: center;
   padding: 1rem;
-  margin-top: 20px;
+  margin-top: 10px;
   color: #9370DB;
   font-weight: bold;
 }
@@ -43,7 +43,6 @@ body {
   flex-direction: column;
   flex-grow: 1;
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -52,7 +51,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 10px 20px;
+  min-height: 450px;
 }
 
 .player-container iframe {
@@ -65,26 +65,12 @@ body {
 
 .dock-container {
   display: flex;
-  gap: 20px;
-  padding: 20px;
   justify-content: center;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  margin-bottom: 20px;
-}
-
-.dock-container::-webkit-scrollbar {
-  height: 8px;
-}
-
-.dock-container::-webkit-scrollbar-track {
-  background: #222;
-  border-radius: 4px;
-}
-
-.dock-container::-webkit-scrollbar-thumb {
-  background-color: #444;
-  border-radius: 4px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  width: 100%;
+  gap: 15px;
 }
 
 .dock-item {
@@ -95,14 +81,13 @@ body {
   padding: 0.5rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  flex-shrink: 0;
-  width: 100px;
-  height: 140px;
+  width: 80px;
+  height: 120px;
 }
 
 .dock-item img {
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
   object-fit: cover;
   border-radius: 10px;
   transition: all 0.3s ease;
@@ -114,9 +99,9 @@ body {
 }
 
 .dock-item:hover img {
-  width: 130px;
-  height: 130px;
-  transform: translateY(-20px);
+  width: 90px;
+  height: 90px;
+  transform: translateY(-10px);
   box-shadow: 0 0 30px rgba(147, 112, 219, 0.8);
 }
 
