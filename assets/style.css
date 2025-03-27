@@ -16,7 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  max-width: 1800px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -45,7 +45,7 @@ body {
   right: 0;
   width: 100%;
   overflow-x: auto;
-  padding: 20px 0;
+  padding: 40px 0;
   z-index: 1000;
   scrollbar-width: thin;
   scrollbar-color: #444 #222;
@@ -70,13 +70,14 @@ body {
 
 .dock-container {
   display: inline-flex;
-  gap: 1.5rem;
+  gap: 0;
   padding: 1rem;
-  min-height: 120px;
+  min-height: 150px;
   margin: 0 auto;
   justify-content: center;
-  max-width: 1400px;
+  max-width: 90%;
   flex-wrap: nowrap;
+  perspective: 500px;
 }
 
 .dock-item {
@@ -85,15 +86,17 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 0.5rem;
-  margin: 0 0.5rem;
+  margin: 0 -15px; /* Negative margin for overlap */
   cursor: pointer;
   transition: all 0.3s ease;
   flex-shrink: 0;
+  perspective: 1000px;
+  transform-style: preserve-3d;
 }
 
 .dock-item img {
-  width: 75px;
-  height: 75px;
+  width: 90px;
+  height: 90px;
   object-fit: cover;
   border-radius: 10px;
   transition: all 0.3s ease;
@@ -101,14 +104,19 @@ body {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.dock-item:hover {
+  z-index: 1001; /* Ensure hovered item is above others */
 }
 
 .dock-item:hover img {
-  width: 120px;
-  height: 120px;
-  bottom: 70px;
-  box-shadow: 0 0 20px rgba(147, 112, 219, 0.7);
-  z-index: 1000;
+  width: 140px;
+  height: 140px;
+  bottom: 90px;
+  box-shadow: 0 0 30px rgba(147, 112, 219, 0.8);
+  transform: translateX(-50%) translateZ(30px);
 }
 
 .dock-label {
@@ -122,8 +130,9 @@ body {
   padding: 5px 10px;
   border-radius: 5px;
   white-space: nowrap;
-  z-index: 1000;
+  z-index: 1002; /* Above all items */
   color: #9370DB;
+  font-weight: bold;
 }
 
 .dock-item:hover .dock-label {
@@ -135,12 +144,17 @@ body {
   color: #9370DB;
 }
 
+.active img {
+  border: 2px solid #9370DB;
+}
+
 .player-container {
   flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
+  margin-bottom: 150px; /* Make space for the dock */
 }
 
 .player-container iframe {
