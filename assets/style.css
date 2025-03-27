@@ -25,6 +25,16 @@ body {
   text-align: center;
   padding: 1rem;
   margin-top: 20px;
+  color: #9370DB;
+}
+
+.title a {
+  color: #9370DB;
+  text-decoration: none;
+}
+
+.title a:hover {
+  text-decoration: underline;
 }
 
 .dock-wrapper {
@@ -37,6 +47,7 @@ body {
   z-index: 1000;
   scrollbar-width: thin;
   scrollbar-color: #444 #222;
+  text-align: center;
 }
 
 .dock-wrapper::-webkit-scrollbar {
@@ -54,12 +65,12 @@ body {
 }
 
 .dock-container {
-  display: flex;
+  display: inline-flex;
   gap: 1.5rem;
   padding: 1rem;
   min-height: 120px;
-  max-width: none;
   margin: 0 auto;
+  justify-content: center;
 }
 
 .dock-item {
@@ -106,6 +117,7 @@ body {
   border-radius: 5px;
   white-space: nowrap;
   z-index: 1000;
+  color: #9370DB;
 }
 
 .dock-item:hover .dock-label {
@@ -114,7 +126,7 @@ body {
 
 .active .dock-label {
   opacity: 1;
-  color: #ff9500;
+  color: #9370DB;
 }
 
 .player-container {

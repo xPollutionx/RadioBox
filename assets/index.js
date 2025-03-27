@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const root = document.getElementById('root');
   root.innerHTML = `
     <div id="player">
-      <div class="title">RadioBox</div>
+      <div class="title"><a href="https://x.com/xPollutionx" target="_blank">xPollutionx</a>'s RadioBox</div>
       <div class="player-container"></div>
       <div class="dock-wrapper">
         <div class="dock-container"></div>
