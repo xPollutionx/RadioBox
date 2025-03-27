@@ -6,26 +6,12 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <!-- Version 3.0 - Fixed album spacing -->
+    <!-- Version 4.0 - Fixed reload loop -->
     <title>xPollutionx's RadioBox</title>
-    <link rel="stylesheet" href="./assets/style.css?v=3.0">
-    <script>
-      // Clear cache on load
-      window.onload = function() {
-        // Force reload without hash to get fresh assets
-        localStorage.setItem('lastUpdate', new Date().toString());
-        
-        if (window.location.hash === '#loaded') {
-          window.location.href = window.location.href.split('#')[0];
-        } else if (!window.location.hash) {
-          window.location = window.location + '#loaded';
-          window.location.reload(true);
-        }
-      }
-    </script>
+    <link rel="stylesheet" href="./assets/style.css?v=4.0">
   </head>
   <body>
     <div id="root"></div>
-    <script src="./assets/index.js?v=3.0"></script>
+    <script src="./assets/index.js?v=4.0"></script>
   </body>
 </html> 
