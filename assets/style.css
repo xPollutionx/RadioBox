@@ -26,6 +26,7 @@ body {
   padding: 1rem;
   margin-top: 20px;
   color: #9370DB;
+  font-weight: bold;
 }
 
 .title a {
@@ -42,12 +43,15 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
+  width: 100%;
   overflow-x: auto;
-  padding: 20px;
+  padding: 20px 0;
   z-index: 1000;
   scrollbar-width: thin;
   scrollbar-color: #444 #222;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .dock-wrapper::-webkit-scrollbar {
@@ -71,6 +75,8 @@ body {
   min-height: 120px;
   margin: 0 auto;
   justify-content: center;
+  max-width: 1400px;
+  flex-wrap: nowrap;
 }
 
 .dock-item {
@@ -101,7 +107,7 @@ body {
   width: 120px;
   height: 120px;
   bottom: 70px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 20px rgba(147, 112, 219, 0.7);
   z-index: 1000;
 }
 

@@ -1,4 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
+  // Force refresh if needed
+  const lastRefresh = localStorage.getItem('lastRefresh');
+  const now = new Date().getTime();
+  if (!lastRefresh || now - lastRefresh > 3600000) {
+    localStorage.setItem('lastRefresh', now);
+    // Only refresh once per hour
+    if (lastRefresh) {
+      window.location.reload(true);
+    }
+  }
+
   // Setup the main structure
   const root = document.getElementById('root');
   root.innerHTML = `
