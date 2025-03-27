@@ -46,6 +46,9 @@ document.addEventListener('DOMContentLoaded', function() {
   // Get dock container
   const dockContainer = document.querySelector('.dock-container');
   const playerContainer = document.querySelector('.player-container');
+  
+  // Define default album to load (using Love Letters)
+  const defaultAlbum = albums[5]; // Index 5 is Love Letters
 
   // Create dock items
   albums.forEach((album, index) => {
@@ -70,17 +73,28 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     dockContainer.appendChild(dockItem);
+    
+    // Store reference to the Love Letters dock item
+    if (album === defaultAlbum) {
+      window.defaultDockItem = dockItem;
+    }
   });
 
   // Function to play YouTube video
   function playVideo(youtubeId) {
     playerContainer.innerHTML = `
       <iframe 
-        src="https://www.youtube.com/embed/${youtubeId}?autoplay=1" 
+        src="https://www.youtube.com/embed/${youtubeId}" 
         frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen>
       </iframe>
     `;
   }
+  
+  // Preload the default album (Love Letters) without autoplay
+  playVideo(defaultAlbum.youtubeId);
+  
+  // Mark Love Letters as active
+  window.defaultDockItem.classList.add('active');
 }); 
