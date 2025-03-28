@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add click event to play YouTube video
     dockItem.addEventListener('click', function() {
       const youtubeId = this.dataset.youtubeId;
-      playVideo(youtubeId);
+      playVideo(youtubeId, true); // Pass true to autoplay when clicking dock items
       
       // Mark this item as active
       document.querySelectorAll('.dock-item').forEach(item => {
@@ -72,10 +72,10 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // Function to play YouTube video
-  function playVideo(youtubeId) {
+  function playVideo(youtubeId, shouldAutoplay = false) {
     playerContainer.innerHTML = `
       <iframe 
-        src="https://www.youtube.com/embed/${youtubeId}?autoplay=1" 
+        src="https://www.youtube.com/embed/${youtubeId}${shouldAutoplay ? '?autoplay=1' : ''}" 
         frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen>
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   // Preload the default album (Love Letters) without autoplay
-  playVideo(defaultAlbum.youtubeId);
+  playVideo(defaultAlbum.youtubeId, false);
   
   // Mark Love Letters as active
   window.defaultDockItem.classList.add('active');
