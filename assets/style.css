@@ -70,7 +70,9 @@ body {
   flex-wrap: wrap;
   padding: 10px;
   width: 100%;
-  gap: 15px;
+  gap: 20px;
+  position: relative;
+  margin-bottom: 30px;
 }
 
 .dock-item {
@@ -81,8 +83,8 @@ body {
   padding: 0.5rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  width: 80px;
-  height: 120px;
+  width: 85px;
+  height: 130px;
 }
 
 .dock-item img {
@@ -90,7 +92,7 @@ body {
   height: 70px;
   object-fit: cover;
   border-radius: 10px;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1.2);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
@@ -99,9 +101,9 @@ body {
 }
 
 .dock-item:hover img {
-  width: 90px;
-  height: 90px;
-  transform: translateY(-10px);
+  width: 120px;
+  height: 120px;
+  transform: translateY(-20px);
   box-shadow: 0 0 30px rgba(147, 112, 219, 0.8);
 }
 
