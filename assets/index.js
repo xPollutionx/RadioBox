@@ -6,7 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="title"><a href="https://x.com/xPollutionx" target="_blank">xPollutionx</a>'s RadioBox</div>
       <div class="content-container">
         <div class="player-container"></div>
-        <div class="dock-container"></div>
+        <div class="dock-scroll-container">
+          <div class="dock-container"></div>
+        </div>
       </div>
     </div>
   `;
