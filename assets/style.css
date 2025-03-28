@@ -141,4 +141,50 @@ body {
 
 .active img {
   border: 2px solid #9370DB;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin-top: 5px;
+  }
+
+  .player-container {
+    min-height: 300px;
+    padding: 5px 10px;
+  }
+
+  .player-container iframe {
+    max-height: 300px;
+  }
+
+  .dock-container {
+    gap: 10px;
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+
+  .dock-item {
+    width: 65px;
+    height: 100px;
+    padding: 0.25rem;
+  }
+
+  .dock-item img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .dock-item:hover img {
+    width: 80px;
+    height: 80px;
+    transform: translateY(-10px);
+  }
+
+  .dock-label {
+    font-size: 0.9rem;
+    padding: 3px 8px;
+  }
 } 
