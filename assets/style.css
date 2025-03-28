@@ -127,7 +127,7 @@ body {
 }
 
 .active .dock-label {
-  opacity: 1;
+  opacity: 1 !important;
   color: #9370DB;
 }
 
