@@ -127,8 +127,16 @@ body {
 }
 
 .active .dock-label {
-  opacity: 1 !important;
+  opacity: 1;
   color: #9370DB;
+}
+
+.dock-container:hover .active .dock-label {
+  opacity: 0;
+}
+
+.active:hover .dock-label {
+  opacity: 1 !important;
 }
 
 .active img {
