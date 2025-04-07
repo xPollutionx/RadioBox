@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
     { title: "Angelo", image: "https://i.ytimg.com/vi/A4u-q4vk8Ew/hqdefault.jpg", youtubeId: "A4u-q4vk8Ew" },
     { title: "Sample This", image: "https://i.ytimg.com/vi/DDzvFcUgTCc/hqdefault.jpg", youtubeId: "DDzvFcUgTCc" },
     { title: "Sample This VOL 2", image: "https://i.ytimg.com/vi/wDqw9J_hUIU/hqdefault.jpg", youtubeId: "wDqw9J_hUIU" },
+    { title: "Highway to Heaven", image: "https://i.ytimg.com/vi/ZE-NvCJPhqQ/hqdefault.jpg", youtubeId: "ZE-NvCJPhqQ" },
     { title: "Sliced N Spliced", image: "https://i.ytimg.com/vi/Vmlc_aKQVZM/hqdefault.jpg", youtubeId: "Vmlc_aKQVZM" },
     { title: "Sliced N Spliced VOL 2", image: "https://i.ytimg.com/vi/MR6u_S6dpSY/hqdefault.jpg", youtubeId: "MR6u_S6dpSY" },
     { title: "Lil' Big Beatz", image: "https://i.ytimg.com/vi/i8nGHXfdnj0/hqdefault.jpg", youtubeId: "i8nGHXfdnj0" },
@@ -38,8 +39,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const dockContainer = document.querySelector('.dock-container');
   const playerContainer = document.querySelector('.player-container');
   
-  // Define default album to load (using Love Letters)
-  const defaultAlbum = albums[5]; // Index 5 is Love Letters
+  // Define default album to load (using Highway to Heaven)
+  const defaultAlbum = albums[11]; // Index 11 is Highway to Heaven
 
   // Create dock items
   albums.forEach((album, index) => {
