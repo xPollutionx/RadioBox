@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     { title: "HyperPopCorn", image: "https://i.ytimg.com/vi/jjZArTW4PhI/hqdefault.jpg", youtubeId: "jjZArTW4PhI" },
     { title: "Anthony", image: "https://i.ytimg.com/vi/XnpYYwOU_5c/hqdefault.jpg", youtubeId: "XnpYYwOU_5c" },
     { title: "Angelo", image: "https://i.ytimg.com/vi/A4u-q4vk8Ew/hqdefault.jpg", youtubeId: "A4u-q4vk8Ew" },
+    { title: "Aloia", image: "https://i.ytimg.com/vi/9RN-G55vrKc/hqdefault.jpg", youtubeId: "9RN-G55vrKc" },
     { title: "Sample This", image: "https://i.ytimg.com/vi/DDzvFcUgTCc/hqdefault.jpg", youtubeId: "DDzvFcUgTCc" },
     { title: "Sample This VOL 2", image: "https://i.ytimg.com/vi/wDqw9J_hUIU/hqdefault.jpg", youtubeId: "wDqw9J_hUIU" },
     { title: "Highway to Heaven", image: "https://i.ytimg.com/vi/ZE-NvCJPhqQ/hqdefault.jpg", youtubeId: "ZE-NvCJPhqQ" },
@@ -39,8 +40,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const dockContainer = document.querySelector('.dock-container');
   const playerContainer = document.querySelector('.player-container');
   
-  // Define default album to load (using Highway to Heaven)
-  const defaultAlbum = albums[11]; // Index 11 is Highway to Heaven
+  // Define default album to load (using Aloia)
+  const defaultAlbum = albums[9]; // Index 9 is Aloia
 
   // Create dock items
   albums.forEach((album, index) => {
